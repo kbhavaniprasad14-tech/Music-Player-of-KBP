@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
+    padding:20px;
+}
+
+.player{
+    width:100%;
+    max-width:420px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.player h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.song-info{
+    text-align:center;
+}
+
+.song-info h3{
+    margin-bottom:5px;
+}
+
+.song-info p{
+    color:gray;
+}
+
+.time{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+    font-size:14px;
+}
+
+#progress{
+    width:100%;
+    cursor:pointer;
+}
+
+.controls{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.controls button{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#3f51b5;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.controls button:hover{
+    transform:scale(1.1);
+}
+
+.volume-box{
+    margin:15px 0;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+#volume{
+    flex:1;
+}
+
+.playlist{
+    margin-top:20px;
+}
+
+.playlist h4{
+    margin-bottom:10px;
+}
+
+.playlist ul{
+    list-style:none;
+}
+
+.playlist li{
+    padding:10px;
+    margin-bottom:5px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.playlist li:hover{
+    background:#f1f1f1;
+}
+
+.active-song{
+    background:#dbe4ff;
+    color:#3f51b5;
+    font-weight:bold;
+}
+
+@media(max-width:500px){
+
+    .player{
+        max-width:100%;
+    }
+
+    .controls button{
+        width:50px;
+        height:50px;
+    }
+}
+.pp2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    color:gray;
+    background:#f1f1f1;
+    padding:10px;
+    font-weight:bold;
+    border-radius:10px;
+    margin-top:20px;
+}
